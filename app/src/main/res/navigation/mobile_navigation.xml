@@ -15,17 +15,17 @@
         android:id="@+id/nav_reflow"
         android:name="com.example.movie_watchlist_app.ui.reflow.ReflowFragment"
         android:label="@string/menu_reflow"
-        tools:layout="@layout/fragment_reflow" />
+        tools:layout="@layout/ielogosanas_logs" />
 
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.example.movie_watchlist_app.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/galvenais_logs" />
 
     <fragment
         android:id="@+id/nav_settings"
         android:name="com.example.movie_watchlist_app.ui.settings.SettingsFragment"
         android:label="@string/menu_settings"
-        tools:layout="@layout/fragment_settings" />
+        tools:layout="@layout/registracijas_logs" />
 </navigation>
