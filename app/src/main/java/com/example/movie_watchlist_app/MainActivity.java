@@ -38,22 +38,21 @@ public class MainActivity extends AppCompatActivity {
         assert navHostFragment != null;
         NavController navController = navHostFragment.getNavController();
 
+        // Initialize AppBarConfiguration with all top-level destinations
+        mAppBarConfiguration = new AppBarConfiguration.Builder(
+                R.id.nav_transform, R.id.nav_reflow, R.id.nav_slideshow, R.id.nav_settings)
+                .setOpenableLayout(binding.drawerLayout)
+                .build();
+
+        NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
+
         NavigationView navigationView = binding.navView;
         if (navigationView != null) {
-            mAppBarConfiguration = new AppBarConfiguration.Builder(
-                    R.id.nav_transform, R.id.nav_reflow, R.id.nav_slideshow, R.id.nav_settings)
-                    .setOpenableLayout(binding.drawerLayout)
-                    .build();
-            NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
             NavigationUI.setupWithNavController(navigationView, navController);
         }
 
         BottomNavigationView bottomNavigationView = binding.appBarMain.contentMain.bottomNavView;
         if (bottomNavigationView != null) {
-            mAppBarConfiguration = new AppBarConfiguration.Builder(
-                    R.id.nav_transform, R.id.nav_reflow, R.id.nav_slideshow)
-                    .build();
-            NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
             NavigationUI.setupWithNavController(bottomNavigationView, navController);
         }
     }

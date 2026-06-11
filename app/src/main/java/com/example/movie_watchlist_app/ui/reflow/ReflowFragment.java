@@ -10,22 +10,20 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.movie_watchlist_app.databinding.FragmentReflowBinding;
+import com.example.movie_watchlist_app.databinding.IelogosanasLogsBinding;
 
 public class ReflowFragment extends Fragment {
 
-    private FragmentReflowBinding binding;
+    private IelogosanasLogsBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         ReflowViewModel reflowViewModel =
                 new ViewModelProvider(this).get(ReflowViewModel.class);
 
-        binding = FragmentReflowBinding.inflate(inflater, container, false);
+        binding = IelogosanasLogsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textReflow;
-        reflowViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

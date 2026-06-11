@@ -90,7 +90,7 @@ public class TransformFragment extends Fragment {
         @NonNull
         @Override
         public TransformViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-            ItemTransformBinding binding = ItemTransformBinding.inflate(LayoutInflater.from(parent.getContext()));
+            ItemTransformBinding binding = ItemTransformBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false);
             return new TransformViewHolder(binding);
         }
 

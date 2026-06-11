@@ -10,18 +10,18 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.movie_watchlist_app.databinding.FragmentSlideshowBinding;
+import com.example.movie_watchlist_app.databinding.GalvenaisLogsBinding;
 
 public class SlideshowFragment extends Fragment {
 
-    private FragmentSlideshowBinding binding;
+    private GalvenaisLogsBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         SlideshowViewModel slideshowViewModel =
                 new ViewModelProvider(this).get(SlideshowViewModel.class);
 
-        binding = FragmentSlideshowBinding.inflate(inflater, container, false);
+        binding = GalvenaisLogsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textSlideshow;

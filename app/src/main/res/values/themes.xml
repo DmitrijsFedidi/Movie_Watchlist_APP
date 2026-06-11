@@ -14,7 +14,7 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.Movie_Watchlist_APP.NoActionBar">
+    <style name="Theme.Movie_Watchlist_APP.NoActionBar" parent="Theme.Movie_Watchlist_APP">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
