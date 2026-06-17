@@ -11,7 +11,7 @@
         android:id="@+id/nav_view"
         android:layout_width="256dp"
         android:layout_height="match_parent"
-        app:headerLayout="@layout/nav_header_main"
+        app:headerLayout="@layout/meklesanas_rezultatu_logs"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:menu="@menu/navigation_drawer" />
